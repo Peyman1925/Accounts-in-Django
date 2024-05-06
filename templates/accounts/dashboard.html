@@ -1,0 +1,13 @@
+{% load static %}
+<html>
+    <head>
+        <h2>Dashboard {{user.username}}</h2>
+    </head>
+    <body>
+        <h2>{{user.username}}</h2>
+        <a href="{% url 'UserProfilePicture' %}"><h2>Change photo</h2></a>
+        <a href="{% url 'ChangePassword' %}"><h2>Change password</h2></a>
+        <img src="{{user.photo.url}}" alt="">
+    </body>
+
+</html>

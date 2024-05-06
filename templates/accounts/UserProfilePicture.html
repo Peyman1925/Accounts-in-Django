@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <h2>Edit Profile Page</h2>
+    </head>
+    <body>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">edit</button>
+            
+        </form>
+    </body>
+</html>
